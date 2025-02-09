@@ -4,9 +4,16 @@ Pre-made layout templates using the [Local business plugin](https://github.com/s
 
 ## What templates live here
 
-1. Testimonials
+- Contact
+- Hero
+- Testimonials
 
 ## Changelog
+## [0.0.2] - 2025-02-09
+
+- Contact sections
+- Hero sections
+- Blocks - Marketing highlights, social media
 
 ## [0.0.1] - 2025-02-08
 
