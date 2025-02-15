@@ -1,6 +1,10 @@
 # Wordpress - ignore core, configuration, examples, uploads and logs.
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
+/css-output/
+*bundle.css
+css-output/bundle.css
+
 # Core
 #
 # Note: if you want to stage/commit WP core files
