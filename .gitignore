@@ -56,3 +56,5 @@ wp-config.php
 #/wp-content/themes
 
 .DS_Storecss-output/
+.DS_Store
+sass/anton7/.DS_Store
