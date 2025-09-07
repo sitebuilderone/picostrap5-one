@@ -1,6 +1,10 @@
 # Wordpress - ignore core, configuration, examples, uploads and logs.
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
+node_modules/
+sass-cache/
+*.map
+
 /css-output/
 *bundle.css
 css-output/bundle.css
@@ -51,4 +55,4 @@ wp-config.php
 # uncomment the next line
 #/wp-content/themes
 
-.DS_Store
+.DS_Storecss-output/
