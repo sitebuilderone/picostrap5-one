@@ -5,9 +5,6 @@ node_modules/
 sass-cache/
 *.map
 
-/css-output/
-*bundle.css
-css-output/bundle.css
 
 # Core
 #
