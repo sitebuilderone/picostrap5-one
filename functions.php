@@ -19,6 +19,9 @@
 
 */
 
+//LOAD LC CONFIG TO DEFINE FRAMEWORK
+require_once ("livecanvas/configuration.php");
+
 // DE-ENQUEUE PARENT THEME BOOTSTRAP JS BUNDLE
 add_action( 'wp_print_scripts', function(){
     wp_dequeue_script( 'bootstrap5' );
@@ -30,7 +33,7 @@ add_action( 'wp_enqueue_scripts', function() {
     //enqueue js in footer, defer
     wp_enqueue_script( 'bootstrap5-childtheme', get_stylesheet_directory_uri() . "/js/bootstrap.bundle.min.js", array(), null, array('strategy' => 'defer', 'in_footer' => true)  );
     
-    //optional: example of how to globally load js files eg  lottie player
+    //optional: example of how to globally lazyload js files eg lottie player, using defer
     //wp_enqueue_script( 'lottie-player', 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js', array(), null, array('strategy' => 'defer', 'in_footer' => true)  );
 }, 101);
 
@@ -51,7 +54,6 @@ add_action( 'wp_enqueue_scripts', function() {
 //register_nav_menus( array( 'third' => __( 'Third Menu', 'picostrap' ), 'fourth' => __( 'Fourth Menu', 'picostrap' ), 'fifth' => __( 'Fifth Menu', 'picostrap' ), ) );
 // THEN USE SHORTCODE:  [lc_nav_menu theme_location="third" container_class="" container_id="" menu_class="navbar-nav"]
 
-
 // CHECK PARENT THEME VERSION
 add_action( 'admin_notices', function  () {
     if( (pico_get_parent_theme_version())>=3.0) return; 
@@ -59,8 +61,8 @@ add_action( 'admin_notices', function  () {
 	printf( '<div class="%1$s"><h1>%2$s</h1></div>', esc_attr( 'notice notice-error' ), esc_html( $message ) );
 } );
 
-// FOR SECURITY: DISABLE APPLICATION PASSWORDS. Remove if needed (unlikely!)
-add_filter( 'wp_is_application_passwords_available', '__return_false' );
+// OPTIONAL: FOR SECURITY: DISABLE APPLICATION PASSWORDS. Uncomment if needed
+//add_filter( 'wp_is_application_passwords_available', '__return_false' );
 
 // ADD YOUR CUSTOM PHP CODE DOWN BELOW /////////////////////////
 
