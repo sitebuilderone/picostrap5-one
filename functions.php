@@ -32,6 +32,7 @@ add_action( 'wp_print_scripts', function(){
 add_action( 'wp_enqueue_scripts', function() {
     //enqueue js in footer, defer
     wp_enqueue_script( 'bootstrap5-childtheme', get_stylesheet_directory_uri() . "/js/bootstrap.bundle.min.js", array(), null, array('strategy' => 'defer', 'in_footer' => true)  );
+    wp_enqueue_script( 'sb-one-bundle', get_stylesheet_directory_uri() . "/js/sb-one-bundle.js", array(), null, array('strategy' => 'defer', 'in_footer' => true)  );
     
     //optional: example of how to globally lazyload js files eg lottie player, using defer
     //wp_enqueue_script( 'lottie-player', 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js', array(), null, array('strategy' => 'defer', 'in_footer' => true)  );
