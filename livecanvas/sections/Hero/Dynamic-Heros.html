@@ -1,0 +1,165 @@
+<!--
+shortcodes used:
+[sbo_field name="one_headline"]
+[sbo_field name="one_headline_support"]
+[sbo_field name="one_cta_text"]
+{Get hero_img}
+
+
+-->
+<tangible class="live-refresh">
+
+	<Set name="hero_img">
+		<Shortcode sbo_url name="one_marketing_image"></Shortcode>
+	</Set>
+
+	<section class="position-relative overflow-hidden bg-dark text-white">
+
+		<img src="{Get hero_img}" alt="" class="bg-image opacity-25">
+
+		<div class="container position-relative py-9">
+			<div class="row py-lg-7">
+				<div class="col-xl-10 mx-auto text-center">
+					<!--:title:-->
+					<h1 class="display-1 mb-4">[sbo_field name="one_headline"]</h1>
+					<!--:Subtitle:-->
+					<p class="mb-5 mb-lg-9">[sbo_field name="one_headline_support"]</p>
+					<!--:Action:-->
+					<a href="#!" class="btn btn-outline-white btn-lg px-lg-5 px-4 btn-rise">
+						<div class="btn-rise-bg bg-white"></div>
+						<div class="btn-rise-text">[sbo_field name="one_cta_text"]</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/::end Hero section::-->
+
+
+
+
+
+
+
+
+
+
+	<!--::Start Hero Parallax Section::-->
+	<section class="position-relative bg-dark jarallax text-white" data-speed=".2">
+		<img src="{Get hero_img}" alt="" class="jarallax-img opacity-50">
+		<div class="container position-relative pt-12 pb-12">
+			<div class="row pt-lg-12 pb-lg-4">
+				<div class="col-xl-8 col-lg-10 mx-auto text-center">
+					<!--:Title:-->
+					<h1 class="display-2 mb-4">Parallax [sbo_field name="one_headline"]</h1>
+					<!--:Subtitle:-->
+					<p class="mb-5 mb-lg-9">[sbo_field name="one_headline_support"]</p>
+					<!--:Action Button:-->
+					<a href="#next" class="btn btn-outline-white btn-lg px-4 px-lg-5  btn-rise">
+						<div class="btn-rise-bg bg-white"></div>
+						<div class="btn-rise-text">[sbo_field name="one_cta_text"]</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--::/End Hero Parallax Section::-->
+
+
+
+
+
+
+
+
+	<!--::Start Shape Image Hero::-->
+	<section class="position-relative bg-gradient-primary">
+		<div class="container z-1 pt-11 pb-9 pt-lg-14 position-relative">
+			<div class="row align-items-center justify-content-around">
+				<div class="col-md-5 text-white mb-7 mb-lg-0">
+					<!--:Heading:-->
+					<h1 class="display-2 me-md-n10 me-lg-n15 position-relative z-1 mb-4">[sbo_field name="one_headline"]</h1>
+					<!--:Subheading:-->
+					<p class="mb-5">
+						[sbo_field name="one_headline_support"]
+					</p>
+					<!--:Button:-->
+					<a href="#" class="btn btn-hover-arrow btn-lg btn-white hover-lift px-4 px-lg-5"><span>[sbo_field name="one_cta_text"]</span></a>
+				</div>
+				<div class="col-md-7 col-lg-6 ms-lg-auto">
+					<!--:Shape Image with mask:-->
+					<div class="bg-mask">
+						<img src="{Get hero_img}" class="mask-squircle mask-image" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--::/End Shape Image Hero::-->
+
+
+
+
+
+
+
+	<!--::Start Hero BG Shape Divider::-->
+	<section class="position-relative bg-primary text-white jarallax" data-speed=".2">
+		<!--Hero parallax image-->
+		<img src="assets/img/backgrounds/bg1.jpg" alt="" class="jarallax-img opacity-25">
+
+		<!--Hero:divider-->
+		<svg class="position-absolute start-0 bottom-0 mb-n1" style="color:var(--bs-body-bg);" preserveAspectRatio="none" width="100%" height="120" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M0 96L1200 0V120H0V96Z" fill="currentColor" />
+		</svg>
+
+		<div class="container position-relative py-12 py-lg-15">
+			<div class="row pb-9">
+				<div class="col-lg-10 mx-auto text-center">
+					<!--:Heading:-->
+					<h1 class="display-1 mb-4">[sbo_field name="one_headline"]</h1>
+					<!--Subheading:-->
+					<p class="lead mb-5">[sbo_field name="one_headline_support"]</p>
+					<!--:Action button:-->
+					<a href="#!" class="btn btn-white px-4 px-lg-5 btn-lg rounded-pill btn-hover-arrow">
+						<span class="btn-rise-text">[sbo_field name="one_cta_text"]</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--::Start Hero BG Shape Divider::-->
+
+
+
+
+
+	<!--::Start Hero Typed Text::-->
+	<section class="position-relative bg-dark text-white jarallax" data-speed=".2">
+		<!--:Hero image:-->
+		<img src="{Get hero_img}" alt="" class="jarallax-img opacity-25">
+		<div class="container pt-12 pt-lg-15 pb-12">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-10 col-xl-8 mx-auto text-center">
+					<!--:Heading + Typed Text:-->
+					<h1 class="mb-4 display-2">Built for<br>
+						<span class="d-inline-block text-warning" data-typed='{"strings": ["Developers", "Businesses", "Minimal Studios", "Agencies", "Creatives"]}'></span>
+					</h1>
+					<!--:Subheading:-->
+					<p class="col-lg-11 mx-auto mb-5 lead">
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+						mollit anim id est laborum.
+					</p>
+					<!--:Action:-->
+					<a href="#!" class="btn btn-outline-white border-2 px-4 px-lg-5 btn-lg">Learn more</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--::/End Hero Typed Text::-->
+
+
+
+
+
+</tangible>
